@@ -15,7 +15,7 @@ jobs:
             # npm run eslint
             # npm run format:check
             # npm run build
-            npm test
+            # npm test
 
   release:
     docker:
