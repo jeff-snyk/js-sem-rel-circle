@@ -18,34 +18,34 @@
       "path": "@semantic-release/github",
       "assets": [
         {
-          "path": "./js-sem-rel-basic-linux",
-          "name": "js-sem-rel-basic-linux",
-          "label": "js-sem-rel-basic-linux"
+          "path": "./js-sem-rel-circle-linux",
+          "name": "js-sem-rel-circle-linux",
+          "label": "js-sem-rel-circle-linux"
         },
         {
-          "path": "./js-sem-rel-basic-linux.sha256",
-          "name": "js-sem-rel-basic-linux.sha256",
-          "label": "js-sem-rel-basic-linux.sha256"
+          "path": "./js-sem-rel-circle-linux.sha256",
+          "name": "js-sem-rel-circle-linux.sha256",
+          "label": "js-sem-rel-circle-linux.sha256"
         },
         {
-          "path": "./js-sem-rel-basic-macos",
-          "name": "js-sem-rel-basic-macos",
-          "label": "js-sem-rel-basic-macos"
+          "path": "./js-sem-rel-circle-macos",
+          "name": "js-sem-rel-circle-macos",
+          "label": "js-sem-rel-circle-macos"
         },
         {
-          "path": "./js-sem-rel-basic-macos.sha256",
-          "name": "js-sem-rel-basic-macos.sha256",
-          "label": "js-sem-rel-basic-macos.sha256"
+          "path": "./js-sem-rel-circle-macos.sha256",
+          "name": "js-sem-rel-circle-macos.sha256",
+          "label": "js-sem-rel-circle-macos.sha256"
         },
         {
-          "path": "./js-sem-rel-basic-win.exe",
-          "name": "js-sem-rel-basic-win.exe",
-          "label": "js-sem-rel-basic-win.exe"
+          "path": "./js-sem-rel-circle-win.exe",
+          "name": "js-sem-rel-circle-win.exe",
+          "label": "js-sem-rel-circle-win.exe"
         },
         {
-          "path": "./js-sem-rel-basic-win.exe.sha256",
-          "name": "js-sem-rel-basic-win.exe.sha256",
-          "label": "js-sem-rel-basic-win.exe.sha256"
+          "path": "./js-sem-rel-circle-win.exe.sha256",
+          "name": "js-sem-rel-circle-win.exe.sha256",
+          "label": "js-sem-rel-circle-win.exe.sha256"
         }
       ]
     }
