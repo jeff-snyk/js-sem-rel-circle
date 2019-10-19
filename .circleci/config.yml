@@ -1,0 +1,52 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:lts
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Build and test
+          command: |
+            ls -la
+            npm install
+            # npm run eslint
+            # npm run format:check
+            # npm run build
+            npm test
+
+  release:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - run: npm run build
+      - run:
+          name: Create binaries with pkg
+          command: |
+            npm run pkg
+            ls -la
+            npm install
+            npm run build
+            shasum -a 256 js-sem-rel-basic-linux > js-sem-rel-basic-linux.sha256
+            shasum -a 256 js-sem-rel-basic-macos > js-sem-rel-basic-macos.sha256
+            shasum -a 256 js-sem-rel-basic-win.exe > js-sem-rel-basic-win.exe.sha256
+            ls -la
+      - run:
+          name: Semantic Release
+          command: |
+            npx semantic-release
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - release:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master

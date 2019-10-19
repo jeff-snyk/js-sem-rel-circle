@@ -1,0 +1,30 @@
+{
+  "name": "js-sem-rel-circle",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release",
+    "pkg": "pkg ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeff-snyk/js-sem-rel-basic.git"
+  },
+  "devDependencies": {
+    "@semantic-release/exec": "^3.3.7",
+    "pkg": "^4.4.0",
+    "semantic-release": "^15.13.24"
+  },
+  "bin": "main.js",
+  "pkg": {
+    "scripts": [
+      "main.js"
+    ],
+    "assets": []
+  }
+}
