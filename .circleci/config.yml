@@ -22,6 +22,7 @@ jobs:
       - image: circleci/node:lts
     steps:
       - checkout
+      - npm install
 #       - run: npm run build
       - run:
           name: Create binaries with pkg
@@ -30,9 +31,9 @@ jobs:
             ls -la
             npm install
             npm run build
-            shasum -a 256 js-sem-rel-basic-linux > js-sem-rel-basic-linux.sha256
-            shasum -a 256 js-sem-rel-basic-macos > js-sem-rel-basic-macos.sha256
-            shasum -a 256 js-sem-rel-basic-win.exe > js-sem-rel-basic-win.exe.sha256
+            shasum -a 256 js-sem-rel-circle-linux > js-sem-rel-circle-linux.sha256
+            shasum -a 256 js-sem-rel-circle-macos > js-sem-rel-circle-macos.sha256
+            shasum -a 256 js-sem-rel-circle-win.exe > js-sem-rel-circle-win.exe.sha256
             ls -la
       - run:
           name: Semantic Release
